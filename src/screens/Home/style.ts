@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1A1A1A',
   },
+
   headerContainer: {
     height: 173,
     backgroundColor: '#0D0D0D',
@@ -23,13 +24,16 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     bottom: -27,
   },
+
   taskInput: {
     backgroundColor: '#262626',
     borderRadius: 6,
+    width: 271,
     color: '#808080',
     padding: 16,
     fontSize: 16,
-    marginRight: 12
+    marginRight: 12,
+    fontFamily: 'interRegular'
   },
 
   taskButton: {
@@ -43,7 +47,8 @@ export const styles = StyleSheet.create({
 
   taskButtonText: {
     color: '#FFF',
-    fontSize: 24
+    fontSize: 24,
+    fontFamily: 'interRegular'
   },
   
   bodyContainer: {
@@ -65,14 +70,31 @@ export const styles = StyleSheet.create({
     backgroundColor: '#333333',
     paddingHorizontal: 8,
     paddingVertical: 2,
-    borderRadius: 999,
+    borderRadius: 99,
     fontWeight: 'bold',
-    color: '#D9D9D9'
+    color: '#D9D9D9',
+    fontFamily: 'interRegular'
   },
 
   noTasksContainer: {
+    height: 208,
+    width: 330,
+    paddingVertical: 48,
+    paddingHorizontal: 20,
+    marginTop: 20,
+
+    border: '1px solid transparent',
+    borderTopColor: '#333333',
     alignItems: 'center',
     justifyContent: 'center',
     color: '#808080'
+  },
+
+  tasksContainer: {
+    width: 330,
+    marginTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
   }
 })
